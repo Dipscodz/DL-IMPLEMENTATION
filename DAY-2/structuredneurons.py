@@ -1,0 +1,3 @@
+import keras
+class StructuredNeuron:
+    
