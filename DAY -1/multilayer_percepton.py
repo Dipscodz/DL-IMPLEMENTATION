@@ -64,7 +64,7 @@ class MLP:
         for i in reversed(range(len(self.weights))):
             d_weights[i] = np.dot(activations[i].T, delta) / m
             d_biases[i] = np.sum(delta, axis=0, keepdims=True) / m
-
+        
             if i != 0:
                 delta = np.dot(delta, self.weights[i].T) * self.sigmoid_derivative(activations[i])
 
