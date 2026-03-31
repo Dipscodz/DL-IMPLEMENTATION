@@ -47,3 +47,4 @@ with ts.no_grad():
     plt.xlabel('Feature 1')
     plt.ylabel('Feature 2')
     plt.show()
+    
