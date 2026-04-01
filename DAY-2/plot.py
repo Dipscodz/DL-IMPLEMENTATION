@@ -42,7 +42,9 @@ with ts.no_grad():
     print(f'Accuracy: {accuracy.item() * 100:.2f}%')
 
 
-with 
+with ts.no_grad():
+    grad = model(X)
+    
 
     plt.scatter(X[:, 0].numpy(), X[:, 1].numpy(), c=predicted.numpy().flatten(), cmap='viridis')
     plt.title('One-Hot Encoded MLP Classifier')
