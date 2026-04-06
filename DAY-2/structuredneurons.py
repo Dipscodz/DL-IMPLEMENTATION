@@ -20,3 +20,5 @@ plt.title('MLP Classifier on Moons Dataset')
 plt.xlabel('Feature 1')
 plt.ylabel('Feature 2')
 plt.show()
+
+assert model.score(X_test, Y_test) > 0.9, "Model accuracy is below 90%."
